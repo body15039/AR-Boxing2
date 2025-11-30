@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>AR Punch Blast</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Import Three.js from CDN -->
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+  <script src="https://unpkg.com/@webxr-input-profiles/motion-controllers@1.0.0/dist/motion-controllers.module.js"></script>
+</head>
+<body>
+  <div id="ar-button">START AR</div>
+  <div id="ui">
+    <div id="score">SCORE: 0</div>
+    <div id="timer">TIME: 0s</div>
+  </div>
+  <div id="game-over" class="hidden">
+    <h2>GAME OVER</h2>
+    <p>Final Score: <span id="final-score">0</span></p>
+    <button id="restart">PLAY AGAIN</button>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

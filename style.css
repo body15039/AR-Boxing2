@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  touch-action: none; /* Essential for AR */
+}
+
+body, html {
+  overflow: hidden;
+  background: #000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#ar-button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px 32px;
+  background: #ff2d55;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  z-index: 100;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(255, 45, 85, 0.5);
+}
+
+#ui {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  z-index: 10;
+  pointer-events: none;
+}
+
+#game-over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 200;
+}
+
+.hidden { display: none; }
+
+#game-over h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff2d55;
+}
+
+#restart {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #00b4ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
